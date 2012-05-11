@@ -12,7 +12,12 @@ To run the whole works you will need:
  
 The first example "update_status.rb" is pure quick and dirty coding, no 
 framework, just a simple ruby script that uses Watir-Webdriver and will do the 
-desired automation.  It is still being refined, I need to resolve some timing
-problems (things work from IRB, but not at scripting speed), randomize the 
-posting data so facebooks duplicate post logic is appeased, and I can more
-easily validate a given posting was made.
+desired automation.  It logs in, makes a posting with the current timestamp in
+it, waits to see 'a few seconds ago' at the top of the posting list, and
+validates that the right data is present in the top posting.
+
+It contains one fixed sleep which I hate, but their UI does not have many easy
+ways to sync and see that any ajax or client side code is done, and the input
+area exhibited occasional problems where it only got part of the posting if
+the post button was clicked immediately after the text was sent to the text
+area.
