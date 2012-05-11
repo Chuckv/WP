@@ -11,7 +11,7 @@ To run the whole works you will need:
     
  
 The first example "update_status.rb" is pure quick and dirty coding, no 
-framework, just a simple ruby script that uses cucumber and will do the 
+framework, just a simple ruby script that uses Watir-Webdriver and will do the 
 desired automation.  It is still being refined, I need to resolve some timing
 problems (things work from IRB, but not at scripting speed), randomize the 
 posting data so facebooks duplicate post logic is appeased, and I can more
