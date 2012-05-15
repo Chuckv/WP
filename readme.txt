@@ -21,3 +21,16 @@ ways to sync and see that any ajax or client side code is done, and the input
 area exhibited occasional problems where it only got part of the posting if
 the post button was clicked immediately after the text was sent to the text
 area.
+
+The second example is a cucumber feature file (in the features directory) and 
+accompaning steps in a step definition file.  To run this all you need to do
+is be at a command line in the main directory for this project ('wp' on my 
+system) and run 'cucumber' 
+
+This is a pretty basic example of using cucumber, and there's a number of 
+things that would be 'dried out' in a real example where we might for example 
+have a lot of scenarios that all require a logged in user, so we would move 
+that into a 'background' section at the top of the feature file.  We might 
+also need a lot of test objects that we want to pass around where we want to 
+be sure that they are initialized properly etc.  Cucumber makes that pretty 
+easy to do as well.
